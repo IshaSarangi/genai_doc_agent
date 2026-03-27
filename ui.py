@@ -44,3 +44,8 @@ if st.button("Get Answer"):
                 st.write("-", s[:200] + "...")
         else:
             st.error("Query failed")
+
+st.markdown(
+    "<p style='text-align: center; color: pink; font-weight: bold;'>Developed by Isha Sarangi | 2026</p>",
+    unsafe_allow_html=True
+)
