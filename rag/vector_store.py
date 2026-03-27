@@ -14,4 +14,13 @@ class VectorStore:
         D, I = self.index.search(
             np.array([query_embedding]).astype("float32"), k
         )
-        return [self.texts[i] for i in I[0]]
+
+        results = []
+        seen = set()
+
+        for i in I[0]:
+            if self.texts[i] not in seen:
+                results.append(self.texts[i])
+                seen.add(self.texts[i])
+
+        return results
