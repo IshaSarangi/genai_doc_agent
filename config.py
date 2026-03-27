@@ -1,4 +1,3 @@
-
 LLM_MODEL = "llama3-8b-8192"
 
 CHUNK_SIZE = 800
