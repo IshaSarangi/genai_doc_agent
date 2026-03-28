@@ -19,3 +19,7 @@ Use Cases:
 - Financial analysis
 - Legal document review
 - Knowledge assistants
+
+How to run:
+- uvicorn app:app --reload
+- streamlit run ui.py
